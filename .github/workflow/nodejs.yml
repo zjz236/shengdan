@@ -1,8 +1,10 @@
-name: GitHub Actions Build and Deploy Demo
+
+name: Node.js Package
+
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [created]
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
