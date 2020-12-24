@@ -16,13 +16,3 @@ jobs:
         with:
           github_token: ${{ secrets.TOKEN }}
           publish_dir: ./dist
-      - name: Mirror to gitee
-        uses: Yikun/hub-mirror-action@master
-        with:
-          src: github/zjz236
-          dst: gitee/zjz236
-          dst_key: ${{ secrets.GITEE_KEY }}
-          dst_token: ${{ secrets.GITEE_TOKEN }}
-          account_type: user
-          white_list: "blog"
-          force_update: true
